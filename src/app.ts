@@ -18,7 +18,6 @@ type GoogleGeocodingResponse = {
 
 function searchAddressHandler(event: Event) {
   event.preventDefault();
-  console.log(process.env.GOOGLE_API_KEY);
   const enteredAddress = addressInput.value;
 
   axios
