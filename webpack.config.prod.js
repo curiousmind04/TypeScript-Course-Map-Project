@@ -28,5 +28,10 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
   },
-  plugins: [new CleanPlugin.CleanWebpackPlugin(), new Dotenv()],
+  plugins: [
+    new CleanPlugin.CleanWebpackPlugin(),
+    new Dotenv({
+      systemvars: true,
+    }),
+  ],
 };
